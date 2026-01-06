@@ -1,0 +1,105 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+a{
+    text-decoration:none;
+}
+
+/* ===== MENGATASI OVERLAP FIXED NAVBAR ===== */
+body{
+    padding-top:70px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#2c3e50;
+    padding:1rem 2rem;
+    color:white;
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+}
+
+/* LOGO */
+.logo-img{
+    height:40px;
+    width:auto;
+}
+
+/* MENU UTAMA */
+.main-menu{
+    display:flex;
+    list-style:none;
+}
+
+.main-menu a{
+    display:block;
+    padding:10px 15px;
+    color:#ecf0f1;
+}
+
+.main-menu a:hover{
+    background:#3498db;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-parent{
+    position:relative;
+}
+
+.submenu{
+    position:absolute;
+    top:100%;
+    left:0;
+    min-width:150px;
+    list-style:none;
+    background:#34495e;
+    display:none;
+    z-index:10;
+}
+
+.dropdown-parent:hover .submenu{
+    display:block;
+}
+
+.submenu li a{
+    padding:10px 15px;
+    color:white;
+    border-top:1px solid #4d657a;
+}
+
+.submenu li a:hover{
+    background:#5d81a5;
+}
+
+/* ===== ACTIVE MENU ===== */
+.main-menu a.active{
+    background:#e74c3c;
+    color:white;
+    font-weight:bold;
+    border-radius:4px;
+}
+
+/* ===== CTA BUTTON ===== */
+.cta-button{
+    background:#e74c3c;
+    color:white;
+    font-weight:bold;
+    padding:8px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.cta-button:hover{
+    background:#c0392b;
+}
